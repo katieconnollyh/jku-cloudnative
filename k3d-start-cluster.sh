@@ -17,3 +17,6 @@ kubectl -n argocd patch secret argocd-secret -p '{"stringData": {"admin.password
 # start the GitOps with creation of argo-cd app
 kubectl -n argocd apply -f ./argo-cd/argo-cd-app.yaml
 
+#set up port forwarding
+#kubectl port-forward svc/argocd-server -n argocd 8080:443
+#URL https://localhost:8080
