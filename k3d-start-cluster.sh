@@ -20,3 +20,8 @@ kubectl -n argocd apply -f ./argo-cd/argo-cd-app.yaml
 #set up port forwarding
 #kubectl port-forward svc/argocd-server -n argocd 8080:443
 #URL https://localhost:8080
+
+#port forwarding for guestbook microservice
+#kubectl port-forward svc/helm-guestbook 9090:80
+#access on http://localhost:9090/
+
